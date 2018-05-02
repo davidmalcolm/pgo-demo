@@ -1,13 +1,9 @@
 #include <stdio.h>
 
-static int flag = 0;
-static int count = 0;
+extern int count;
+extern void workload (void);
 
-void workload (void)
-{
-  if (flag)
-    count += 1;
-}
+int flag = 0;
 
 int main (int argc, const char **argv)
 {
