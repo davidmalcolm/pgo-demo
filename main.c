@@ -14,5 +14,7 @@ int main (int argc, const char **argv)
 
   printf ("count: %i\n", count);
 
+  run_devirt_cc ();
+
   return 0;
 }
