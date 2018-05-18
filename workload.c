@@ -1,4 +1,5 @@
-extern int flag;
+#include "shared.h"
+
 int count = 0;
 
 void workload (void)

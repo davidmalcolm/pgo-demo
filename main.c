@@ -1,7 +1,5 @@
 #include <stdio.h>
-
-extern int count;
-extern void workload (void);
+#include "shared.h"
 
 int flag = 0;
 
