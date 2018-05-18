@@ -8,6 +8,8 @@ SOURCES=devirt.cc \
 	loop-opts.c \
 	main.c \
 	not-inlinable.c \
+	presentation-inlined.c \
+	presentation-not-inlined.c \
 	workload.c
 
 DEPS=$(SOURCES) Makefile shared.h
