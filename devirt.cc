@@ -20,7 +20,7 @@ static void test (base *ptr)
   //obj.meth ();
 }
 
-void run_devirt_cc ()
+void devirt_cc_body ()
 {
   subclass obj;
   test (&obj);

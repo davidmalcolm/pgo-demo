@@ -4,7 +4,12 @@ test: pgo-demo-opt
 clean:
 	rm -f pgo-demo-train pgo-demo-opt *.c.* *.cc.* *.gcda
 
-SOURCES=main.c workload.c devirt.cc
+SOURCES=devirt.cc \
+	loop-opts.c \
+	main.c \
+	not-inlinable.c \
+	workload.c
+
 DEPS=$(SOURCES) Makefile shared.h
 
 GCC_BUILD_DIR=/home/david/coding-3/gcc-git-static-analysis/build/gcc

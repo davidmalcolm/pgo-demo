@@ -2,7 +2,7 @@
 
 int count = 0;
 
-void workload (void)
+void workload_c_body (void)
 {
   if (flag)
     count += 1;

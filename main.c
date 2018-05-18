@@ -10,11 +10,14 @@ int main (int argc, const char **argv)
   printf ("pgo-demo\n");
 
   for (i = 0; i < 100000; i++)
-    workload ();
+    {
+      devirt_cc_body ();
+      loop_opts_c_body ();
+      workload_c_body ();
+    }
 
   printf ("count: %i\n", count);
 
-  run_devirt_cc ();
 
   return 0;
 }

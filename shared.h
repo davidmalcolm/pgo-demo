@@ -5,9 +5,11 @@ extern "C" {
 extern int count;
 extern int flag;
 
-extern void workload (void);
+extern void not_inlinable (void);
 
-extern void run_devirt_cc (void);
+extern void devirt_cc_body (void);
+extern void loop_opts_c_body (void);
+extern void workload_c_body (void);
 
 #ifdef __cplusplus
 };
